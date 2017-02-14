@@ -1,0 +1,17 @@
+{
+  "name": "hangman",
+  "description": "The hangman game",
+  "main": "main.js",
+  "authors": [
+    "Hesham"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/HeshamAbdalla/hangman",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
