@@ -3,10 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>Hangman</title>
+    <!--bower styles-->
+    <link rel="stylesheet" href="./bower_components/foundation-sites/dist/css/foundation.min.css">
+    <!--End bower-->
+
+    <!--main styles-->
     <link rel="stylesheet" href="./styles/main.css">
+
   </head>
   <body>
-    <h1>HELLO WORLD</h1>
+    <div id="top">
+    <div class="row">
+      <div class="small-6 large-6  columns player">
+        <div class="err hide">
+        <div class="alert callout">
+          <p><i class="fi-alert"></i>Please type your name or check for errors</p>
+        </div>
+      </div>
+      <div class="name-field">
+        <input class="name" type="text" placeholder="Your Name">
+        <input class="difficulty" type="number" value="1">
+        <input class="maxLength" type="number" value="0">
+        <input class="minLength" type="number" value="0">
+        <a class="button play">Start</a>
+      </div>
+    </div>
+      <div class="small-3 large-4 columns">
+        <small>Score</small> <span class="badge secondary">2</span>
+        <small>Life</small> <span class="badge success">0</span>
+      </div>
+      <div class="small-6 large-4 columns">
+      </div>
+    </div>
+  </div>
+
+  <div id="mid">
+    <div class="row">
+      <div class="small-6 large-6 columns">
+        <img src="./assets/images/first.png" id="img">
+      </div>
+      <div class="small-6 large-6 columns">
+        <ul class="words">
+        </ul>
+      </div>
+    </div>
+      <div class="row">
+      <div class="small-6 large-centered columns">
+        <div class="button-group"></div>
+      </div>
+    </div>
+  </div>
+    <!--bower scripts-->
+    <script src="./bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="./bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
+    <script src="./bower_components/underscore/underscore-min.js" charset="utf-8"></script>
+    <!--main scripts-->
     <script src="./scripts/main.js" charset="utf-8"></script>
   </body>
 </html>
