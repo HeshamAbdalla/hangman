@@ -15,9 +15,11 @@
 
   > |scripts/
         main.js
+
   > |styles/
         main.css
-    |server.js  << Run basic server
+        
+  > |server.js  << Run basic server
 
 
 
