@@ -18,21 +18,21 @@
 
   > |styles/
         main.css
-        
+
   > |server.js  << Run basic server
 
 
 
 ##Project Setup
-1. first install packages
+first install packages
 ```
 npm install
 ```
-2. second install bower components
+second install bower components
 ```
 bower install
 ```
-3. run basic server
+run basic server
 ```
 npm start
 ```
