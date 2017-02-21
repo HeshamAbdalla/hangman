@@ -76,7 +76,7 @@ $(function() {
       $('.minLength').val(),
       $('.maxLength').val()
     );
-    $('#img').attr('src', './assets/images/first.png');
+    $('#img').attr('src', 'https://s12.postimg.org/6j0gwttbx/First.png');
 
   });
 
@@ -109,21 +109,21 @@ $(function() {
     }
 
     if( guesses < 1 ) {
-      $('#img').attr('src', './assets/images/hangman.gif');
+      $('#img').attr('src', 'https://s7.postimg.org/s6akuhlrv/Hangman.gif');
       $('#modal').html(
         '<p class="lead">Your Score <span class="badge secondary">' + score +'</span></p>\
         <p class="lead">The word was ' + correctWords.toUpperCase() +'</p>').foundation('open');
          //module for the correct word and the score
       } else if (guesses === 5) {
-        $('#img').attr('src', './assets/images/first.png');
+        $('#img').attr('src', 'https://s12.postimg.org/6j0gwttbx/First.png');
       } else if (guesses === 4) {
-        $('#img').attr('src', './assets/images/second.png');
+        $('#img').attr('src', 'https://s2.postimg.org/3p0jh63h5/Second.png');
       } else if (guesses === 3) {
-        $('#img').attr('src', './assets/images/third.png');
+        $('#img').attr('src', 'https://s13.postimg.org/hjfo6sthz/Third.png');
       } else if (guesses === 2) {
-        $('#img').attr('src', './assets/images/fourth.png');
+        $('#img').attr('src', 'https://s7.postimg.org/90sh7urgb/Fourth.png');
       } else if (guesses === 1) {
-        $('#img').attr('src', './assets/images/fifth.png');
+        $('#img').attr('src', 'https://s31.postimg.org/o1o7vmpt7/Fifth.png');
       }
       nextGame(counter, wordLetter.length); // check if player got the correct word
   });
@@ -154,7 +154,7 @@ $(function() {
       $('.words').text('');
       $('span.badge.secondary').html(score);
       $('span.badge.success').html(guesses);
-      $('#img').attr('src', './assets/images/first.png');
+      $('#img').attr('src', 'https://s12.postimg.org/6j0gwttbx/First.png');
       $('.button-group a').removeClass('disabled');
       getGameInfo(userName, level, Math.floor(Math.random() * 6 ) + 0, Math.floor(Math.random() * 12 ) + 1);
     }
