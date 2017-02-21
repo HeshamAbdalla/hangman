@@ -2,7 +2,7 @@
 $(function() {
   $(document).foundation();
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
-  var url = 'http://linkedin-reach.hagbpyjegb.us-west-2.elasticbeanstalk.com/words';
+  var url = 'https://linkedin-reach.hagbpyjegb.us-west-2.elasticbeanstalk.com/words';
   var score = 0;
   var counter = 0; // nextGame counter
   var count = 0; // counter for Hangman Digram
