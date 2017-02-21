@@ -15,7 +15,6 @@ $(function() {
   var guesses = 5;
 
 
-
   var getWords = function(url, difficulty, minLength, maxLength) {
     $.ajax({
       url: url,
@@ -53,7 +52,7 @@ $(function() {
     }
   };
 
-  //----- Get Customized Words-----\\
+  //----- Game Info -----\\
   var getGameInfo = function(name, difficulty, minLength, maxLength) {
     if( difficulty < 10 ) {
       $('div.err').addClass('hide');
@@ -86,7 +85,7 @@ $(function() {
     $('.button-group').append("<a class='button alphabet'>"+val+"</a>");
   });
 
-  //---- Alphabet
+  //---- Alphabet - secretWord --------\\
   $('a.alphabet').click(function() {
     alphaLetter = $(this).text().toLowerCase();
     // check if the letter in wordLetter array
