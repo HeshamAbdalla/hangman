@@ -1,17 +1,18 @@
 # Hangman #
 
 ## libraries / Frameworks ##
-> JQuery
-> Zurb Foundation
-> Express.js
-> bower
-> npm
+> JQuery /
+> Zurb Foundation /
+> Express.js /
+> bower /
+> npm /
 
 
 ## Project Structure ##
   | Hangman/:
   > |assets/
         images
+
   > |scripts/
         main.js
   > |styles/
