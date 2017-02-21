@@ -48,11 +48,10 @@ label {
   background-color: #4390fc;
   color: rgba(255, 255, 255, 0.59);
 }
-/*a.button.alphabet {
-  background-color: rgb(102, 51, 153);
-  color: #fefefe;
-}*/
-
+.position-left {
+  width: 300px;
+  transform: translateX(-300px);
+}
 .button {
   background-color: rgb(102, 51, 153);
   color: #fefefe;

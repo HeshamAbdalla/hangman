@@ -1,8 +1,6 @@
 
 $(function() {
   $(document).foundation();
-  introJs().start();
-
   var alphabet = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('');
   var url = 'http://linkedin-reach.hagbpyjegb.us-west-2.elasticbeanstalk.com/words';
   var score = 0;
@@ -15,7 +13,6 @@ $(function() {
   var userName;
   var level; // difficulty
   var guesses = 5;
-  // var idx;
 
 
 
@@ -32,7 +29,6 @@ $(function() {
       },
       success: function(data) {
         if(data !== '') {
-
         correctWords = data;
         data = data.split('');
         for(var i = 0; i < data.length; i++) {
@@ -61,8 +57,8 @@ $(function() {
   var getGameInfo = function(name, difficulty, minLength, maxLength) {
     if( difficulty < 10 ) {
       $('div.err').addClass('hide');
-      $('.name-field').hide();
-      $('.player').html("<h3>"+ name + "<small> Level " + difficulty +"<br>"+ " Max Length " + maxLength + "<br>"+ " Min Length " + minLength + " </small></h3>");
+      // $('.name-field').hide();
+      $('.userInfo').html("<h3>"+ name + "<small> Level " + difficulty +"<br>"+ "Word Max Length " + maxLength + "<br>"+ " Word Min Length " + minLength + " </small></h3>");
       $('span.badge.success').html(guesses);
       $('span.badge.secondary').html(score);
       getWords(url, difficulty, minLength, maxLength);
@@ -82,6 +78,7 @@ $(function() {
       $('.maxLength').val()
     );
     $('#img').attr('src', './assets/images/first.png');
+
   });
 
   //----- Alphabet letters -----\\
@@ -118,7 +115,6 @@ $(function() {
         '<p class="lead">Your Score <span class="badge secondary">' + score +'</span></p>\
         <p class="lead">The word was ' + correctWords.toUpperCase() +'</p>').foundation('open');
          //module for the correct word and the score
-         newGame()
       } else if (guesses === 5) {
         $('#img').attr('src', './assets/images/first.png');
       } else if (guesses === 4) {
@@ -144,7 +140,6 @@ $(function() {
         $('.words').text('');
         $('span.badge.secondary').html(score);
         $('span.badge.success').html(guesses);
-
         $('.button-group a').removeClass('disabled');
         getGameInfo(userName, level, Math.floor(Math.random() * 6 ) + 1, Math.floor(Math.random() * 12 ) + 4);
       }
@@ -168,9 +163,5 @@ $(function() {
     $('#newGame').click(function() {
       newGame();
     });
-
-
-
-
     console.log('%cREACH PILOT PROGRAM', "font-size: 40px; color: blue");
   });
