@@ -1,9 +1,59 @@
+h1, h3, h4{
+  color: #fefefe;
+}
+label {
+  color: #fefefe;
+}
 .words li {
   display: inline-block;
   padding: 10px;
-  font-size: 30px;
+  font-size: 40px;
+  color: #fefefe;
+  margin-top: 25%;
 }
 .badge {
   margin: auto 0px;
   font-size: 20px;
+}
+.badge.secondary {
+  background-color: #663399;
+  color: #fefefe;
+}
+.badge.success {
+  background-color: #4390fc;
+  color: #fefefe;
+}
+#mid {
+  background-color: rebeccapurple;
+}
+#top {
+  background-color: #4390fc;
+}
+.button.disabled, .button[disabled] {
+  background-color: rgb(85, 62, 109);
+}
+
+.callout {
+  background-color: #fff;
+  color: #0a0a0a;
+}
+
+
+.expanded.button {
+  background-color: rgb(102, 51, 153);
+  color: #fefefe;
+}
+.expanded.button:focus,
+.expanded.button:hover {
+  background-color: #4390fc;
+  color: rgba(255, 255, 255, 0.59);
+}
+/*a.button.alphabet {
+  background-color: rgb(102, 51, 153);
+  color: #fefefe;
+}*/
+
+.button {
+  background-color: rgb(102, 51, 153);
+  color: #fefefe;
 }
